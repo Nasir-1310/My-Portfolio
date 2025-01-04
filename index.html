@@ -13,14 +13,15 @@
         <div class="container">
             <nav>
                 <img class="logo" src="images/logo.png" alt="logoimage">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>An Aspiring Software Engineering Student</p>
@@ -84,7 +85,7 @@
         </div>
     </div>
     <!-- --------------services--------------- -->
-    <div id="services">
+    <d iv id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
@@ -111,6 +112,70 @@
             </div>
         </di>
     </div>
+    <!-- --------------portfolio----------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-llist">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This is app as work in social media. This is very interesting and work smpthly. If you want to know more. feel free to say.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>This is app as work in social media. This is very interesting and work smpthly. If you want to know more. feel free to say.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Online App</h3>
+                        <p>This is app as work in social media. This is very interesting and work smpthly. If you want to know more. feel free to say.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+
+     <!-- ------------contact--------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>nasir.iit.du@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>01955612456</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a class="btn btn2" href="images/my-cv.pdf" download="">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Emain" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Nasir. Made with <i class="fa-regular fa-heart"></i> by N3 Journey </p>
+        </div>
+      </div>
 </body>
 
 <script>
@@ -128,6 +193,17 @@
             }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+        
     }
 </script>
 </html>
