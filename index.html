@@ -163,12 +163,13 @@
                     <a class="btn btn2" href="images/my-cv.pdf" download="">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Emain" required>
+                        <input type="email" name="Email" placeholder="Your Emain" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button class="btn btn2" type="submit">Submit</button>
                     </form>
+                    <p id="msg"></p>
                 </div>
             </div>
         </div>
@@ -206,4 +207,26 @@
         
     }
 </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzyEu7d48Jv2WvK7OEumz6mRBURoNBOW4myJVa9WrsPsro80cc9xnWRiCBCOJZVbSqMVQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const message=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response=>{
+            message.innerHTML="Message sent successfully"
+            setTimeout(function(){
+            message.innerHTML=""
+            },2000)
+         form.reset()
+
+        })
+        
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </html>
