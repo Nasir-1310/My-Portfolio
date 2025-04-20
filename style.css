@@ -11,7 +11,7 @@ html {
 body {
   background: #080808;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+ 
 }
 p {
   font-family: 'Roboto', sans-serif;
@@ -189,7 +189,10 @@ nav ul li a:hover::after {
   cursor: pointer;
   color: white;
   border-radius: 5px;
-  background-color: rgb(55, 60, 153);
+  background-color: rgb(184, 138, 11);
+}
+.service-btn:hover{
+background-color: #066d06;
 }
 .btn{
   padding-top: 100px;
@@ -214,6 +217,8 @@ nav ul li a:hover::after {
   /* overflow: hidden; */
 }
 .Work img {
+  max-width: 100%;
+  height: auto;
   width: 100%;
   border-radius: 10px;
   display: block;
@@ -334,13 +339,7 @@ form textarea {
   font-size: 18px;
   border-radius: 6px;
 }
-form btn2 {
-  cursor: pointer;
-  padding: 14px 60px;
-  font-size: 18px;
-  margin-top: 20px;
-  
-}
+
 button.btn.btn2{
   cursor: pointer;
 }
@@ -387,6 +386,10 @@ nav .fa-solid {
     z-index: 2;
     transition: right 0.5s;
   }
+
+  
+  
+
   nav ul li {
     display: block;
     margin: 25px;
