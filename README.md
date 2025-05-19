@@ -19,6 +19,7 @@ I’m passionate about creating impactful digital experiences.
 
 Feel free to reach out via the Contact section on the website or connect with me on:
 
-- nasir-uddin-2a6498269
+- https://bd.linkedin.com/in/nasir-uddin-2a6498269
 - https://github.com/Nasir-1310
 - Email: nasir.iit.du@gmail.com
+- Facebook : www.facebook.com/nasir.uddin1310
