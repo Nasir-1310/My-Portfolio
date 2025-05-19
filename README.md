@@ -4,6 +4,6 @@ Welcome to my personal portfolio! This website showcases my work, skills, and pr
 
 ## 🔗 Live Site
 
-Visit the live portfolio here: mdnasiruddin.netlify.app
+Visit the live portfolio here: https://mdnasiruddin.netlify.app/
 
 
